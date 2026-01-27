@@ -1,0 +1,57 @@
+/* Page background */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Sign-up container */
+.sign-up {
+  width: 350px;
+  margin: 60px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.sign-up h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels */
+.sign-up label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input fields */
+.sign-up input[type="text"],
+.sign-up input[type="email"],
+.sign-up input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button */
+.sign-up input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff8fa3;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.sign-up input[type="submit"]:hover {
+  background-color: #ff6f91;
+}
