@@ -1,0 +1,109 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/*  HEADER  */
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/*  NAV BAR  */
+.topnav {
+  background-color: #444;
+  text-align: center;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*  SECTIONS */
+section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #222;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;
+  height: 180px;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+/* FORMS  */
+.form-box {
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #038857;
+}
+
+/*  FOOTER  */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .gallery img {
+    width: 90%;
+    height: auto;
+  }
+}

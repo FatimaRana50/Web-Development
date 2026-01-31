@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lumière Art Gallery - A premier modern art gallery showcasing contemporary masterpieces from world-renowned artists. Explore our curated collection of paintings, sculptures, and digital art.">
+    <meta name="keywords" content="art gallery, modern art, contemporary art, paintings, sculptures, artists, exhibitions">
+    <meta name="author" content="Lumière Art Gallery">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lumière Art Gallery - Where Art Comes Alive">
+    <meta property="og:description" content="Discover extraordinary contemporary art at Lumière Gallery. Featuring works from emerging and established artists worldwide.">
+    <meta property="og:type" content="website">
+    
+    <title>Lumière Art Gallery | Modern & Contemporary Art</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =============================================
+         NAVIGATION BAR
+         ============================================= -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <i class="fas fa-palette"></i>
+                <span>Lumi<em>è</em>re</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#artists" class="nav-link">Artists</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#signup" class="nav-link">Sign Up</a></li>
+                <li><a href="#feedback" class="nav-link">Feedback</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============================================
+         HERO SECTION (HOME)
+         ============================================= -->
+    <section id="home">
+        <div class="hero-content">
+            <span class="hero-badge">
+                <i class="fas fa-star"></i> Established 2024
+            </span>
+            <h1 class="hero-title">
+                Where Art <span>Comes Alive</span>
+            </h1>
+            <p class="hero-subtitle">
+                Welcome to Lumière Art Gallery, a premier destination for contemporary art enthusiasts. 
+                Immerse yourself in a world where creativity knows no bounds, featuring extraordinary 
+                works from visionary artists across the globe.
+            </p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn btn-primary">
+                    <i class="fas fa-images"></i> Explore Gallery
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#gallery">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- =============================================
+         MAIN CONTENT
+         ============================================= -->
+    <main>
+
+        <!-- =============================================
+             GALLERY SECTION
+             ============================================= -->
+        <section id="gallery" class="section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Our Collection</h2>
+                    <p>Discover extraordinary works from our carefully curated collection of contemporary masterpieces that challenge, inspire, and transform.</p>
+                </header>
+                
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 - Featured -->
+                    <article class="gallery-item featured">
+                        <img src="images/art1.jpg" alt="Abstract Expressionist Painting - Vibrant Colors">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i class="fas fa-expand"></i></span>
+                            <h4>Chromatic Symphony</h4>
+                            <p>Abstract Expressionism • Elena Vasquez</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Gallery Item 2 -->
+                    <article class="gallery-item">
+                        <img src="images/art2.jpg" alt="Minimalist Geometric Art">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i class="fas fa-expand"></i></span>
+                            <h4>Geometric Harmony</h4>
+                            <p>Minimalism • Marcus Chen</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Gallery Item 3 -->
+                    <article class="gallery-item">
+                        <img src="images/art3.jpg" alt="Surrealist Dreamscape">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i class="fas fa-expand"></i></span>
+                            <h4>Dreamscape Horizons</h4>
+                            <p>Surrealism • Sofia Laurent</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Gallery Item 4 -->
+                    <article class="gallery-item">
+                        <img src="images/art4.jpg" alt="Pop Art Portrait">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i class="fas fa-expand"></i></span>
+                            <h4>Pop Culture Icon</h4>
+                            <p>Pop Art • James Morrison</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Gallery Item 5 -->
+                    <article class="gallery-item">
+                        <img src="images/art5.jpg" alt="Fluid Art in Gold and Blue">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i class="fas fa-expand"></i></span>
+                            <h4>Ocean's Gold</h4>
+                            <p>Fluid Art • Elena Vasquez</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Gallery Item 6 -->
+                    <article class="gallery-item">
+                        <img src="images/art6.jpg" alt="Neo-Impressionist Nature Scene">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i class="fas fa-expand"></i></span>
+                            <h4>Verdant Dreams</h4>
+                            <p>Neo-Impressionism • Sofia Laurent</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================
+             ARTISTS SECTION
+             ============================================= -->
+        <section id="artists" class="section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Featured Artists</h2>
+                    <p>Meet the visionary creators whose works define contemporary art and push the boundaries of creative expression.</p>
+                </header>
+                
+                <div class="artists-grid">
+                    <!-- Artist 1 -->
+                    <article class="artist-card">
+                        <div class="artist-image">
+                            <img src="images/artist1.jpg" alt="Elena Vasquez - Abstract Artist">
+                            <span class="artist-badge"><i class="fas fa-award"></i></span>
+                        </div>
+                        <h4>Elena Vasquez</h4>
+                        <span class="artist-specialty">Abstract Expressionism</span>
+                        <p>A master of color and emotion, Elena creates vibrant works that explore the depths of human experience through bold brushstrokes and dynamic compositions.</p>
+                        <div class="artist-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Website"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Artist 2 -->
+                    <article class="artist-card">
+                        <div class="artist-image">
+                            <img src="images/artist2.jpg" alt="Marcus Chen - Contemporary Painter">
+                            <span class="artist-badge"><i class="fas fa-palette"></i></span>
+                        </div>
+                        <h4>Marcus Chen</h4>
+                        <span class="artist-specialty">Contemporary Minimalism</span>
+                        <p>Marcus finds beauty in simplicity, creating minimalist works that speak volumes through carefully balanced forms, colors, and negative space.</p>
+                        <div class="artist-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="#" aria-label="Website"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Artist 3 -->
+                    <article class="artist-card">
+                        <div class="artist-image">
+                            <img src="images/artist3.jpg" alt="Sofia Laurent - Sculptor">
+                            <span class="artist-badge"><i class="fas fa-cube"></i></span>
+                        </div>
+                        <h4>Sofia Laurent</h4>
+                        <span class="artist-specialty">Mixed Media & Sculpture</span>
+                        <p>Blending traditional techniques with innovative materials, Sofia creates immersive installations that challenge perceptions and invite contemplation.</p>
+                        <div class="artist-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" aria-label="Website"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Artist 4 -->
+                    <article class="artist-card">
+                        <div class="artist-image">
+                            <img src="images/artist4.jpg" alt="James Morrison - Master Artist">
+                            <span class="artist-badge"><i class="fas fa-crown"></i></span>
+                        </div>
+                        <h4>James Morrison</h4>
+                        <span class="artist-specialty">Pop Art & Digital</span>
+                        <p>A pioneer in contemporary pop art, James bridges traditional canvas work with cutting-edge digital techniques, creating icons for the modern age.</p>
+                        <div class="artist-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="Website"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================
+             ABOUT SECTION
+             ============================================= -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Mission & Vision</h2>
+                        <p class="lead">
+                            At Lumière, we believe art has the power to transform lives, spark conversations, and bridge cultural divides.
+                        </p>
+                        <p>
+                            Founded in 2024, our gallery has become a beacon for contemporary art lovers seeking meaningful connections with creative works. We curate experiences that challenge perceptions and inspire wonder.
+                        </p>
+                        <p>
+                            Our vision extends beyond displaying art—we aim to cultivate a vibrant community where artists and enthusiasts converge, where ideas flourish, and where the next generation of creators finds their voice.
+                        </p>
+                        
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <i class="fas fa-eye"></i>
+                                <div>
+                                    <h5>Curated Excellence</h5>
+                                    <p>Every piece is carefully selected for artistic merit</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <i class="fas fa-hands-helping"></i>
+                                <div>
+                                    <h5>Artist Support</h5>
+                                    <p>We champion emerging and established artists alike</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <h5>Education</h5>
+                                    <p>Workshops and programs for all skill levels</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <i class="fas fa-globe-americas"></i>
+                                <div>
+                                    <h5>Global Reach</h5>
+                                    <p>Artists from over 40 countries represented</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-image"></i>
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Artworks</div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <div class="stat-number">120+</div>
+                            <div class="stat-label">Artists</div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Exhibitions</div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-heart"></i>
+                            <div class="stat-number">25K+</div>
+                            <div class="stat-label">Visitors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================
+             SIGN UP / LOGIN SECTION
+             ============================================= -->
+        <section id="signup" class="section-padding">
+            <div class="container">
+                <div class="signup-container">
+                    <div class="signup-info">
+                        <h2>Join Our <span class="text-accent">Art Community</span></h2>
+                        <p>
+                            Become a member of Lumière and unlock exclusive benefits, early access to exhibitions, and connect with fellow art enthusiasts from around the world.
+                        </p>
+                        
+                        <ul class="signup-benefits">
+                            <li><i class="fas fa-check-circle"></i> Exclusive preview of new collections</li>
+                            <li><i class="fas fa-check-circle"></i> Invitations to private exhibition openings</li>
+                            <li><i class="fas fa-check-circle"></i> Monthly newsletter with artist interviews</li>
+                            <li><i class="fas fa-check-circle"></i> Special discounts on art prints and merchandise</li>
+                            <li><i class="fas fa-check-circle"></i> Access to member-only virtual gallery tours</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="signup-form-container">
+                        <header class="form-header">
+                            <h3>Create Your Account</h3>
+                            <p>Join thousands of art lovers today</p>
+                        </header>
+                        
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="signup-name">Full Name</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-email">Email Address</label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-password">Password</label>
+                                <div class="input-wrapper">
+                                    <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="newsletter">
+                                    <span>Subscribe to our newsletter</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-user-plus"></i> Create Account
+                            </button>
+                            
+                            <div class="form-divider">or</div>
+                            
+                            <p class="form-footer">
+                                Already have an account? <a href="#">Sign In</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================
+             FEEDBACK SECTION
+             ============================================= -->
+        <section id="feedback" class="section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Share Your Experience</h2>
+                    <p>Your feedback helps us create better art experiences for everyone. Tell us what you think!</p>
+                </header>
+                
+                <div class="feedback-container">
+                    <div class="feedback-info">
+                        <h3><i class="fas fa-comments"></i> We Value Your Voice</h3>
+                        <p>
+                            At Lumière, every opinion matters. Your insights help us improve our exhibitions, services, and overall gallery experience.
+                        </p>
+                        
+                        <ul class="feedback-features">
+                            <li><i class="fas fa-check"></i> Anonymous feedback option available</li>
+                            <li><i class="fas fa-check"></i> All responses reviewed by our team</li>
+                            <li><i class="fas fa-check"></i> Suggestions implemented quarterly</li>
+                            <li><i class="fas fa-check"></i> Recognition for valued contributors</li>
+                        </ul>
+                        
+                        <blockquote class="feedback-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The attention to detail and the immersive atmosphere made my visit unforgettable. Lumière truly understands art."</p>
+                            <cite>— Sarah M., Art Collector</cite>
+                        </blockquote>
+                    </div>
+                    
+                    <div class="feedback-form-container">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="feedback-name"><i class="fas fa-user"></i> Your Name</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="feedback-name" name="name" placeholder="Enter your name">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="feedback-email"><i class="fas fa-envelope"></i> Email Address</label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="feedback-email" name="email" placeholder="Enter your email" required>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label><i class="fas fa-star"></i> Your Rating</label>
+                                <div class="rating-group">
+                                    <label><input type="radio" name="rating" value="1"><span>1</span></label>
+                                    <label><input type="radio" name="rating" value="2"><span>2</span></label>
+                                    <label><input type="radio" name="rating" value="3"><span>3</span></label>
+                                    <label><input type="radio" name="rating" value="4"><span>4</span></label>
+                                    <label><input type="radio" name="rating" value="5" checked><span>5</span></label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="feedback-message"><i class="fas fa-comment-alt"></i> Your Message</label>
+                                <textarea id="feedback-message" name="message" placeholder="Share your thoughts, suggestions, or experiences..." rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Submit Feedback
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================
+             CONTACT SECTION
+             ============================================= -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions? We'd love to hear from you. Reach out through any of our channels below.</p>
+                </header>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Visit Us</h4>
+                        <p>
+                            123 Art District Avenue<br>
+                            Creative Quarter, NYC 10001<br>
+                            United States
+                        </p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4>Call Us</h4>
+                        <p>
+                            <a href="tel:+12125551234">+1 (212) 555-1234</a><br>
+                            Mon - Fri: 9AM - 6PM<br>
+                            Sat - Sun: 10AM - 4PM
+                        </p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p>
+                            <a href="mailto:hello@lumiere.art">hello@lumiere.art</a><br>
+                            <a href="mailto:press@lumiere.art">press@lumiere.art</a><br>
+                            <a href="mailto:artists@lumiere.art">artists@lumiere.art</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =============================================
+         FOOTER
+         ============================================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <i class="fas fa-palette"></i>
+                        <span>Lumi<em>è</em>re</span>
+                    </div>
+                    <p>
+                        Lumière Art Gallery is dedicated to showcasing extraordinary contemporary art and supporting creative visionaries from around the world.
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#artists">Artists</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Art Consultation</a></li>
+                        <li><a href="#">Private Viewings</a></li>
+                        <li><a href="#">Corporate Art</a></li>
+                        <li><a href="#">Art Storage</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lumière Art Gallery. All rights reserved. Crafted with <i class="fas fa-heart text-accent"></i> for art lovers.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
