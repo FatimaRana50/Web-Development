@@ -1,4 +1,4 @@
-// Get all the elements we need
+
 const gameArea = document.getElementById("gameArea");
 const arrow = document.getElementById("arrow");
 const target = document.getElementById("target");
@@ -112,7 +112,7 @@ function increaseDifficulty() {
   }
 }
 
-// Start the countdown timer
+
 function startTimer() {
   timerInterval = setInterval(() => {
     timeLeft--;
@@ -124,7 +124,7 @@ function startTimer() {
   }, 1000);
 }
 
-// End the game
+
 function endGame() {
   gameOver = true;
   clearInterval(targetInterval);
@@ -152,7 +152,7 @@ function restartGame() {
   target.style.right = "50px";
   target.style.top = "170px"; 
   
-  // Hide arrow
+  // 
   arrow.style.display = "none";
   
   // Start game
