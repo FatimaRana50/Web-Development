@@ -1,0 +1,26 @@
+body {
+margin: 0;
+height: 100vh;
+background: black;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+cursor: url("https://cur.cursors-4u.net/nature/nat-10/nat973.cur"), auto;
+
+
+}
+
+#fire {
+width: 300px;
+cursor: pointer;
+}
+
+#msg {
+position: absolute;
+top: 20px;
+color: white;
+font-size: 24px;
+font-family: Arial, sans-serif;
+}
