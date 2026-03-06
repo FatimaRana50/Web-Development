@@ -1,0 +1,48 @@
+# Dependency directories - for both my-code and AI-code
+my-code/node_modules/
+AI-code/node_modules/
+my-code/package-lock.json
+AI-code/package-lock.json
+
+# Environment files
+my-code/.env
+AI-code/.env
+my-code/.env.local
+AI-code/.env.local
+my-code/.env.*.local
+AI-code/.env.*.local
+
+# Logs
+my-code/logs/
+AI-code/logs/
+my-code/*.log
+AI-code/*.log
+my-code/npm-debug.log*
+AI-code/npm-debug.log*
+my-code/yarn-debug.log*
+AI-code/yarn-debug.log*
+my-code/yarn-error.log*
+AI-code/yarn-error.log*
+
+# Runtime data
+my-code/pids
+AI-code/pids
+my-code/*.pid
+AI-code/*.pid
+my-code/*.seed
+AI-code/*.seed
+my-code/*.pid.lock
+AI-code/*.pid.lock
+
+# Optional npm cache
+my-code/.npm
+AI-code/.npm
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
