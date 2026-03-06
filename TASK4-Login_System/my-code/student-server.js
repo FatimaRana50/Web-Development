@@ -1,10 +1,11 @@
 const express = require('express');
 const session = require('express-session');
-require('./db');
-const User = require('./User');
+require('./student-db');  // Changed from './db'
+const User = require('./student-User');  // Changed from './User'
 
 const app = express();
 
+// Rest of your code remains the same...
 // Middleware to read form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -1,7 +1,8 @@
+// ai-server.js
 const express = require('express');
 const session = require('express-session');
-const connectDB = require('./db');
-const User = require('./User');
+const connectDB = require('./ai-db');
+const User = require('./ai-User');
 
 const app = express();
 
@@ -12,14 +13,15 @@ connectDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Session configuration
 app.use(
   session({
-    secret: process.env.SESSION_SECRET || 'your-secret-key',
+    secret: 'your-secret-key-here',
     resave: false,
     saveUninitialized: false,
     cookie: {
-      httpOnly: true,       // Prevent JS from reading cookie
-      maxAge: 1000 * 60 * 60 // Session expires in 1 hour
+      httpOnly: true,
+      maxAge: 1000 * 60 * 60 // 1 hour
     }
   })
 );
@@ -29,24 +31,39 @@ const isAuthenticated = (req, res, next) => {
   if (req.session && req.session.user) {
     return next();
   }
-  return res.status(401).json({ message: 'Unauthorized. Please login first.' });
+  return res.status(401).json({ message: 'Please login first' });
 };
+
+// Home route (optional - for browser testing)
+app.get('/', (req, res) => {
+  res.json({
+    message: 'AI Login System API',
+    endpoints: {
+      register: 'POST /register',
+      login: 'POST /login',
+      dashboard: 'GET /dashboard (protected)',
+      logout: 'GET /logout'
+    }
+  });
+});
 
 // POST /register
 app.post('/register', async (req, res) => {
   try {
     const { username, password } = req.body;
 
+    // Validation
     if (!username || !password) {
       return res.status(400).json({ message: 'Username and password are required' });
     }
 
+    // Create user instance and register
     const user = new User(username, password);
     const message = await user.register();
 
-    return res.status(201).json({ message });
+    res.status(201).json({ message });
   } catch (error) {
-    return res.status(400).json({ message: error.message });
+    res.status(400).json({ message: error.message });
   }
 });
 
@@ -55,25 +72,27 @@ app.post('/login', async (req, res) => {
   try {
     const { username, password } = req.body;
 
+    // Validation
     if (!username || !password) {
       return res.status(400).json({ message: 'Username and password are required' });
     }
 
+    // Create user instance and login
     const user = new User(username, password);
-    await user.login(); // throws if invalid
+    const result = await user.login();
 
-    // Save username in session
+    // Store user in session
     req.session.user = username;
 
-    return res.status(200).json({ message: 'Login successful' });
+    res.status(200).json({ message: 'Login successful' });
   } catch (error) {
-    return res.status(401).json({ message: error.message });
+    res.status(401).json({ message: error.message });
   }
 });
 
 // GET /dashboard (protected)
 app.get('/dashboard', isAuthenticated, (req, res) => {
-  return res.status(200).json({ message: `Welcome ${req.session.user}` });
+  res.status(200).json({ message: `Welcome ${req.session.user}` });
 });
 
 // GET /logout
@@ -82,12 +101,16 @@ app.get('/logout', (req, res) => {
     if (err) {
       return res.status(500).json({ message: 'Logout failed' });
     }
-    return res.status(200).json({ message: 'Logout successful' });
+    res.status(200).json({ message: 'Logout successful' });
   });
 });
 
-// Start server
-const PORT = process.env.PORT || 3000;
+// Start server (using port 3001 to avoid conflict with student server)
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`✅ AI Server running on http://localhost:${PORT}`);
+  console.log(`📝 Register: POST http://localhost:${PORT}/register`);
+  console.log(`🔑 Login: POST http://localhost:${PORT}/login`);
+  console.log(`📊 Dashboard: GET http://localhost:${PORT}/dashboard`);
+  console.log(`🚪 Logout: GET http://localhost:${PORT}/logout`);
 });
