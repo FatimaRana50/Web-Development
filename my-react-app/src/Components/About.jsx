@@ -1,8 +1,8 @@
 function About() {
   return (
-    <div>
+    <div className="page">
       <h1>About This App</h1>
-      <p>This is a React application that uses React Router for client-side navigation between Home, About, and Contact pages.</p>
+      <p>This app is built with React and React Router. It demonstrates client-side navigation between multiple pages without any full page reloads.</p>
     </div>
   );
 }
